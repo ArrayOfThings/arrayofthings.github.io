@@ -1,4 +1,2 @@
-arrayofthings.github.io
-=======================
-
-Array of Things website
+Array of Things
+<img src="images/ArrayofThingsLogo.png">
