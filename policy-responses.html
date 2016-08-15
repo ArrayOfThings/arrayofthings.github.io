@@ -92,7 +92,7 @@
 
             <p><b>Tell us more about the partners involved in this work - specifically the SAIC & Smart Chicago. Why are they involved? </b></p>
                 
-            <p>The School of the Art Institute of Chicago (SAIC) has been involved from the conception of the project, working on the physical design of the nodes, since the early conception of the project.  Faculty members from SAIC also worked with the AoT project and faculty members at Lane Tech High School to develop and pilot a high school curriculum on Internet of Things and sensor networks.</p>
+            <p>The School of the Art Institute of Chicago (SAIC) has been involved in the physical design of the nodes since the early conception of the project.  Faculty members from SAIC also worked with the AoT project and faculty members at Lane Tech High School to develop and pilot a high school curriculum on Internet of Things and sensor networks.</p>
    
             <p>Smart Chicago Collaborative is assisting the project with community engagement, enabling the project to leverage their experience in this area. </p>
 
@@ -147,7 +147,7 @@
 
             <p><b>Add a provision to pull the plug. "If a regular evaluation determines that the AoT is unable to meet the goals of the program, or if the program is producing a preponderance of adverse effects, it may be discontinued." (or the like) The public may well be scared at a new level of surveillance/coveillance and reassurances that misuse of the data will be stopped will go a long way towards encouraging acceptance. </b></p>
                 
-            <p>The regular evaluation of the project includes the possibility for discontinuing the project.  Additionally, the National Science Foundation will review the project annually. The project’s funding ends in 2018, after which all parties will review the project and determine whether to extend it.</p>
+            <p>The regular evaluation of the project includes the possibility for discontinuing the project.  Additionally, the National Science Foundation will review the project annually. The project’s funding ends in 2018, after which all parties will review the project and determine whether to extend it. As detailed in the privacy policy, the devices will not collect personal information nor provide any other surveillance capability.</p>
    
         </div>
 
@@ -157,7 +157,7 @@
                 
             <p>Other than several candidate environmental sensors such as rain or carbon dioxide, no new or experimental sensors are expected prior to the first annual review of the project and policies. </p>
 
-			<p>Experimental sensors proposed by parties outside the AoT project team will be reviewed by the project team (system operators) and the Scientific Review Group.  If the sensors have any potential to detect personal information then a plan must be included as to how their use will comply with the privacy policy, and in these cases that plan will also be reviewed by the Technical Security and Privacy Group. As part of the agreement to test new sensors, outside parties must agree that once the sensor research/evaluation is complete then all validated data stored at Argonne and published openly.</p>
+			<p>Experimental sensors proposed by parties outside the AoT project team will be reviewed by the project team (system operators) and the Scientific Review Group.  If the sensors have any potential to detect personal information then a plan must be included as to how their use will comply with the privacy policy, and in these cases that plan will also be reviewed by the Technical Security and Privacy Group. As part of the agreement to test new sensors, outside parties must agree that once the sensor research/evaluation is complete then all validated data stored at Argonne will be published openly.</p>
    
         </div>
 
@@ -219,7 +219,7 @@
 
             <p><b>This is a concerning piece of wording and implementation of this proposal. This makes me have to ask about the specific management rules of these images - who has access, how long will they be stored, and how do they get deleted?  If these images are never deleted, then the entire PII section of this document is void from a technical perspective. With enough images taken over time, one can find an individual based on their clothing, follow them through each image, and eventually determine where they work and where they live. From there, it's pretty easy to figure out the rest of that person's identity. Blurring out images and license plates is not enough.  To me, I think it would be better if a smarter solution could be implemented to where images are not even needed for these metrics (i.e. traffic patterns). I don't know what that solution would be, but I'm more afraid of the potential of future harm to be done with these images more than anything.</b></p>
                 
-            <p>The policy document has been updated to clarify the image deletion process and how the calibration images (a fraction of 1% of the images processed and deleted in the nodes) will be protected.  This limited set of images will contain no sensitive PII.  Some may potentially show faces or license plates, and while these are not considered sensitive PII the project has elected nonetheless to limit access to those images to approved individuals who have signed usage agreements, as outlined in the published privacy policy document.</p>
+            <p>The policy document has been updated to clarify that image processing for the street-facing cameras will be done on the nodes themselves, and the images will then be destroyed - not saved or transmitted.  For calibration of image processing software, a fraction of 1% of images will be randomly saved.  This limited set of images will contain no sensitive PII.  Some may potentially show faces or license plates, and while these are not considered sensitive PII the project has elected nonetheless to limit access to those images to approved individuals who have signed usage agreements, as outlined in the published privacy policy document.</p>
    
         </div>
 
@@ -227,7 +227,7 @@
 
             <p><b>Although most citizens may not care, the technically minded ones would be interested in knowing exactly how this data is secured and encrypted. There are different ways of doing so and being transparent about that is important IMO.</b></p>
                 
-            <p>All data transmission is encrypted via OpenSSL, and cellular connectivity will use AT&T’s encrypted virtual private network (VPN).  Although none of the images will contain sensitive PII, the methodology for securing calibration images will follow NIST guidelines for control, audit, and protection of sensitive data, for example using AES-256 or similarly strong encryption methods.  The open source software stack is also published in Github (waggle-sensor) where the project encourages the technical community to comment and contribute to its evolution.</p>
+            <p>All data transmission is encrypted via OpenSSL, and cellular connectivity will use AT&T’s encrypted virtual private network (VPN).  Although none of the limited set of calibration images (the fraction of 1% not destroyed in the nodes) will contain sensitive PII, the methodology for securing calibration images will follow NIST guidelines for control, audit, and protection of sensitive data, for example using AES-256 or similarly strong encryption methods.  The open source software stack is also published in Github (waggle-sensor) where the project encourages the technical community to comment and contribute to its evolution.</p>
    
         </div>
 
@@ -235,7 +235,7 @@
 
             <p><b>Will all raw data that is collected be uploaded to the secure facility? Will some of the raw data be deleted on-site after processing?</b></p>
                 
-            <p>All sensor data, with the exception of images, will be uploaded to an open data system operated by the University of Chicago and Argonne National Laboratory.  This data, containing no PII, will be retained for future use indefinitely.  In normal operation, images will be processed on the node and deleted within minutes.  For calibration, a fraction of 1% of images will be maintained and protected at Argonne National Laboratory.  If and when the Array of Things project concludes, these images will be either processed to remove possible identifiers (faces or license plate numbers) or deleted.</p>
+            <p>All sensor data, with the exception of the limited set of calibration images from the street-facing cameras, will be uploaded to an open data system operated by the University of Chicago and Argonne National Laboratory.  This data, containing no PII, will be retained for future use indefinitely.  In normal operation, images will be processed on the node and deleted within minutes.  For calibration, a fraction of 1% of images will be maintained and protected at Argonne National Laboratory.  If and when the Array of Things project concludes, these images will be either processed to remove possible identifiers (faces or license plate numbers) or deleted.</p>
    
         </div>
 
@@ -361,7 +361,7 @@
 
             <p><b>Isn’t there a research trade-off between having the sensors placed around the city randomly vs. strategically?</b></p>
                 
-            <p>Depending on the measurement goal, you don’t necessarily need sensors placed everywhere or evenly. Observing lake effects vs. traffic vs. air quality data requires strategic configurations of the sensors. </p>
+            <p>Depending on the measurement goal, you don’t necessarily need sensors placed everywhere or evenly. Observing lake effects vs. traffic vs. air quality data each require different strategic configurations and locations of the sensors. </p>
    
         </div>
 
@@ -403,7 +403,7 @@
 
             <p><b>With the recording of PII, will we be able to make out specific things in the pictures?  Who is going to have access to this data? For example, the NSA? </b></p>
                 
-            <p>Images of the public way are not considered PII, but public information such as can be found in phone books or on public websites, including some features in images such as faces or license plate numbers. This type of information is often referred to as “non-sensitive PII.”  </p>
+            <p>Images of the public way are not considered sensitive PII.  Rather, such images are considered to be public information such as can be found in phone books or on public websites, including some features in images such as faces or license plate numbers. This type of information is often referred to as “non-sensitive PII.”  </p>
 
             <p>In some cases it will be possible to detect a face or license plate, but the image processing software approval process prohibits the extraction of these or other identifiers from the images. Access to the images, whether those discarded within the nodes or the fraction of 1% that are saved for calibration, will be limited to individuals who have (a) demonstrated scientific need and (b) signed acceptable use agreements.</p>
    
@@ -483,9 +483,9 @@
 
               <div class="featurette" id="about">
 
-            <p><b>Please If and when the project closes how will PII be properly disposed of so that it will not later be leaked?  </b></p>
+            <p><b>Please if and when the project closes how will PII be properly disposed of so that it will not later be leaked?  </b></p>
                 
-            <p>If the project is discontinued, any and all saved images will either be preserved for research under the same privacy and protection policies as the project, or will be destroyed, or will be processed by software that removes faces, license plates, or other potentially identifying information. </p>
+            <p>The project will not collect or save any PII. If the project is discontinued, any and all saved images will either be preserved for research under the same privacy and protection policies as the project, or will be destroyed, or will be processed by software that removes faces, license plates, or other potentially identifying information. </p>
    
         </div>
 
@@ -493,7 +493,7 @@
 
             <p><b>I think information sharing should be limited carefully.  No data should be downloaded to individual personal devices.  This sounds a lot like big brother.  If the data is there somebody will access and use it. </b></p>
                 
-            <p>No data with any information about an individual will be published.  All data management and access within the project team is governed by signed ethics and privacy agreements. </p>
+            <p>No data with any information about an individual will be published.  All data management and access within the project team is governed by signed ethics and privacy agreements. These agreements include restrictions on where the data may be processed, including prohibition from storing on personal devices of any kind.</p>
    
         </div>
 
