@@ -5,11 +5,11 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="autdor" content="">
 
-    <title>Array of Things</title>
+    <title>Array of tdings</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <link href="css/one-page-wonder.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- WARNING: Respond.js doesn't work if you view tde page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -30,7 +30,7 @@
 
 
 
-    <!-- Full Width Image Header -->
+    <!-- Full Widtd Image Header -->
 <div class="container">
       
     <div class="text-center">   
@@ -41,23 +41,130 @@
     <img class="img-responsive center-block" src="/images/components.jpeg">
     <br>
   
-    <p class="lead"><h1><b>Current Sensor List (March 2016)</b></h1></p>
+    <p class="lead"><h1><b>Current Sensor List (August 2016)</b></h1></p>
     <br>
-    <p class="lead"><b>Acceleration and Vibration</b>: Freescale Semiconductor MMA8452Q</p>
-    <p class="lead"><b>Carbon Monoxide</b>: SPEC Sensors 3SP-CO-1000</p>
-    <p class="lead"><b>Humidity</b>: Honeywell HIH4030</p>
-    <p class="lead"><b>Hydrogen Sulphide</b>: SPEC Sensors IAQ-100</p>
-    <p class="lead"><b>Infrared Light</b>: AMS-TAOS USA TSL260RD</p>
-    <p class="lead"><b>Light</b>: LAPIS Semiconductor ML8511, Melexis MLX75305</p>
-    <p class="lead"><b>Magnetic Field</b>: Honeywell HMC5883L</p>
-    <p class="lead"><b>Nitrogen Dioxide</b>: SPEC Sensors 3SP-NO2-20</p>
-    <p class="lead"><b>Ozone</b>: SPEC Sensors 3SP-O3-20</p>
-    <p class="lead"><b>RMS Sound Level</b>: Knowles SPV1840LR5H-B</p>
-    <p class="lead"><b>Sulfur Dioxide</b>: SPEC Sensors 3SP-H2S-50</p>
-    <p class="lead"><b>Temperature and Humidity</b>: Honeywell HIH6130, Measurement Specialties HTU21D</p>
-    <p class="lead"><b>Temperature</b>: Bosch Sensortec BMP180, Measurement Specialties TSYS01, Melexis MLX90614, STMicroelectronics LPS25H, Sensirion SHT25, Texas Instruments TMP112, Texas Instruments TMP421, U.S. Sensor PR103J2</p>
-    <p class="lead"><b>Ultraviolet Intensity</b>: Silicon Labs Si1145</p>
-    <p class="lead"><b>Visible Light</b>: AMS-TAOS USA TSL250RD, AMS-TAOS USA TSL250RD, Avago Technologies APDS-9006-020</p>
+    <table style="widtd:100%"">
+
+    <tr>
+        <th>Measurement</th>
+        <th>Purpose/Application</th>
+        <th>Sensor(s) Used</th>
+        <th>Privacy Notes</th>
+    </tr>
+    <tr>
+        <td>Carbon Monoxide</td>
+        <td>Air Quality/Health</td>
+        <td>SPEC Sensors 3SP-CO-1000</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Hydrogen Sulphide</td>
+        <td>Air Quality/Health</td>
+        <td>SPEC Sensors IAQ-100</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Nitrogen Dioxide</td>
+        <td>Air Quality/Health</td>
+        <td>SPEC Sensors 3SP-NO2-20</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Ozone</td>
+        <td>Air Quality/Health</td>
+        <td>SPEC Sensors 3SP-O3-20</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Sulfur Dioxide</td>
+        <td>Air Quality/Health</td>
+        <td>SPEC Sensors 3SP-H2S-50</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Air Particles</td>
+        <td>Air Quality/Health (PM 2.5 to ~40)</td>
+        <td>Alpasense OPC-N2 (included in ~20% of nodes)</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Temperature & Humidity</td>
+        <td>Weather Conditions</td>
+        <td>Honeywell HIH6130, Measurement Specialties HTU21D</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Humidity</td>
+        <td>Weather Conditions</td>
+        <td>Honeywell HIH4030</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Temperature</td>
+        <td>Weather Conditions</td>
+        <td>Bosch Sensortec BMP180, Measurement Specialties TSYS01, Melexis MLX90614, STMicroelectronics LPS25H, Sensirion SHT25, Texas Instruments TMP112 & TMP421, U.S. Sensor PR103J2</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Physical Shock/Vibration</td>
+        <td>Detect heavy vehicles, shock to street pole (e.g. accident)</td>
+        <td>Freescale Semiconductor MMA8452Q</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Magnetic Field</td>
+        <td>Detect heavy vehicle flow</td>
+        <td>Honeywell HMC5883L</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Infrared Light</td>
+        <td>Cloud cover, sunlight intensity</td>
+        <td>AMS-TAOS USA TSL206RD</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Light</td>
+        <td>Cloud cover, sunlight intensity</td>
+        <td>LAPIS Semiconductor ML8511, Melexis MLX75305</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Ultraviolet Intensity</td>
+        <td>Cloud cover, sunlight intensity</td>
+        <td>Silicon Labs Si1145</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Visible Light</td>
+        <td>Cloud cover, sunlight intensity</td>
+        <td>AMS-TAOS USA TSL250RD, Avago Technologies APDS-9006-020</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>RMS Sound Level</td>
+        <td>Sound intensity (loudness)</td>
+        <td>Knowles SPV1840LR5H-B</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Camera</td>
+        <td>Street conditions, traffic flow, events</td>
+        <td>ELP-USB500W02M-L 170, ELP-USB500W02M-L 140</td>
+        <td>2,3</td>
+    </tr>
+    </table>
+
+
+    <br>
+    <p class="lead"><b>Privacy Notes</b></p>
+    <p>1: These sensors do not have the capability to measure or identify individuals.</p>
+    <p>2: Microphones and cameras in public spaces do not collect sensitive personally identifiable information (PII). Microphone and camera images will be processed in near-real-time within the installed equipment, not transmitted or stored, with the exception of less than 1% of images at random times, saved for the purposes of image processing software calibration. Although these images will not contain PII, they will be controlled and protected with the same measures typically afforded PII. For more information and detail, please see <a href="/privacypolicy.html">the Privacy Policy.</a></p>
+    <p>3: During the 2016-2017 pilot period, the cameras will be used for the purposes of detecting and publishing (a) count/flow of pedestrians, (b) count and flow of various vehicle types, and (c) extent to which road surface is covered with standing water (flooding). This list will be updated prior to publishing new types of data from images.</p>
+
+
+
+    
 
 </div>
 

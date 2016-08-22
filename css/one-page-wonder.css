@@ -176,3 +176,9 @@ footer {
         margin-left: 0;
     }
 }
+
+table, th, td {
+    border: 1px solid black;
+    padding: 15px;
+    border-collapse: collapse;
+}
