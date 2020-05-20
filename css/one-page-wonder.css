@@ -23,6 +23,10 @@ body {
     padding: 120px 0;
 }
 
+.left {
+ float: left;
+ padding: 0 10px 0 0;}
+
 .headline h1 {
     font-size: 130px;
     background: #fff;
