@@ -23,9 +23,11 @@ body {
     padding: 120px 0;
 }
 
-.left {
- float: left;
- padding: 0 10px 0 0;}
+.imagewrap {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 20px;
+}
 
 .headline h1 {
     font-size: 130px;
